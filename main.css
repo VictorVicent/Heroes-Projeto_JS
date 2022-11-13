@@ -1,0 +1,227 @@
+body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    padding: 2rem;
+    /*background-image: url("imagens/universo1.gif");*/
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    color: #ff3636;
+    text-decoration: underline;
+
+}
+
+h1#home{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+p#menu{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a#menu{
+    text-decoration: none;
+    margin: 100px;
+     }
+
+img#logo{
+    width: 200px;
+    height: 100px;
+}
+
+
+
+div#sec1{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.imagens{
+    width: 300px;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex: 1;
+    margin-top: 100px;
+}
+
+
+.imagens:hover{
+    opacity: 0.3;
+    filter:grayscale(100%);
+    transition: 1s;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+p#titulos{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*--Página Personagens--*/
+
+img#logo1{
+    width: 200px;
+    height: 70px;
+}
+
+a#menu:hover{
+    color: #ff3636;
+    text-decoration: underline;
+
+}
+
+/*--Página Filmes--*/
+
+
+h1#font0{ 
+    font-weight: 500;
+    font-size: 2.0rem;
+    line-height: 1.0;
+    color:rgb(146, 62, 62);
+    }
+    
+    .words {
+        width: 1000px;
+        overflow-wrap: break-word; 
+        word-wrap: break-word;
+        word-break: break-word;
+        font-size: 21px;
+        color:rgb(146, 62, 62);
+    }
+    
+    h2#font1{
+        font-size: 2.5rem;
+        color:rgb(146, 62, 62); 
+    }
+    
+
+
+/*--Página Sobre--*/
+
+div#sobre{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+
+}
+
+img#sobre{
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+/* CORPO DA PAGINA */
+    header{
+        background-color:#f5f5f5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.0rem 50px;
+    }
+    
+    main{
+        position:absolute;
+		left:50%;
+		top:50%;
+		margin-left:-500px;
+		margin-top:-250px;
+        text-align: auto;
+    }
+
+/* CARD */
+
+.snip1361 {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+  .snip1361 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1361 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .snip1361 figcaption {
+    position: absolute;
+    top: calc(87%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px 25px 65px;
+  }
+  .snip1361 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .snip1361 h3,
+  .snip1361 p {
+    margin: 0 0 10px;
+  }
+  .snip1361 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .snip1361 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .snip1361 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .snip1361:hover figcaption,
+  .snip1361.hover figcaption {
+    top: 80px;
+  }
+
+  
