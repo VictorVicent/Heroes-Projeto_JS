@@ -93,7 +93,9 @@ function alterarConteudo13() {
   document.getElementsByClassName("words")[6].innerHTML = "<img src='avimg/4.png' height='130px'>"
 }
 
-
+function trailer7() {
+  document.getElementsByClassName('words')[6].innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/CyiiEJRZjSU' title='YouTube video player'></iframe>'"
+}
   
 function alterarConteudo14() {
   document.getElementsByClassName("words")[6].innerHTML = "Peter Parker tem a sua identidade secreta revelada e pede ajuda ao Doutor Estranho.Quando um feitiço para reverter o evento não sai como o esperado, o Homem-Aranha e seu companheiro dos Vingadores precisam enfrentar inimigos de todo o multiverso."
