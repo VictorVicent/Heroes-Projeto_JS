@@ -1,49 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
     <title>Home</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
-<body>
+<body class="home">
+
 <header>
-    <h1 id="home"><a href="home.html"><img src="imagens/LOGO.png" alt="Logo Heroes Autoral" id="logo" ></a></h1>
-    
-<nav id="menu">
-        <a href="personagens.html" id="menu"> PERSONAGENS </a> 
-        <a href="filmes.html" id="menu"> FILMES </a> 
-        <a href="sobre.html" id="menu"> SOBRE NÓS</a>
-</nav>
+    <nav class="home">
+        <div class="logo">
+            <h1><a href="home.html"><img src="img/LOGO.png" alt="Logo Heroes Autoral" id="logo"></a></h1>
+        </div>
+
+        <ul>
+            <li> <a href="filmes.html"> Filmes </a> </li>
+            <li> <a href="personagens.html"> Personagens </a></li>
+            <li> <a href="sobre.html"> Sobre </a> </li>
+        </ul>
+
+    </nav>
 </header>
 
-<main>
-    <div id="sec1">
+<main id="home">
+    <div class="sec1">
 
-        <div id="d1">
-            <a href="personagens.html"><img src="imagens/personagens.jpeg" alt="Personagens marvel" class="imagens"><p id="titulos">PERSONAGENS</p> </a>
-        </div>
+        <figure class="sec2">
+            <a href="filmes.html"><img src="img/filmes.jpeg" alt="Universo cinematografico marvel" id="imagens">
 
-        <div id="d1">
-            <a href="filmes.html"><img src="imagens/filmes.jpeg" alt="Universo cinematografico marvel" class="imagens"><p id="titulos">FILMES</p></a>
-        </div>
+            <figcaption>  
+            <h3 id="titulos">Filmes</h3>
+            <p id="home">A pagina "Filmes" é destinada a apresentar a opinião em consenso do grupo em relação aos 10 melhores filmes da marvel desde seu inicio no cinema</p>    
+            </figcaption></a>
+        </figure>
 
-        <div id="d1">
-            <a href="quadrinhos.html"><img src="imagens/quadrinhos.jpeg" alt="Quadrinhos marvel" class="imagens"><p id="titulos">SOBRE</p></a>
-        </div>
+
+        <figure class="sec2">
+            <a href="personagens.html"><img src="img/personagens.jpeg" alt="Personagens marvel" id="imagens">
+            
+            <figcaption>
+            <h3 id="titulos">Personagens</h3> 
+            <p id="home">A pagina "Personagens" foi criada com o intuito do usuario criar uma lista dos seus personagens favoritos ou ou dos personagens mais fortes na sua opinião, a liberdade é totalmente sua</p>    
+            </figcaption></a>
+
+        </figure>
+
+        
+        <figure class="sec2">
+
+            <a href="sobre.html"><img src="img/programador.jpg" alt="Imagem meramente ilustrativa para a pagina sobre os integrantes do 
+            projeto" id="imagens">
+            
+            <figcaption>
+            <h3 id="titulos">Sobre Nós</h3>
+            <p id="home">A pagina "Sobre nós" é destinada à apresentar e falar um pouco sobre cada integrante do projeto</p>    
+            </figcaption></a>
+
+        </figure>
 
     </div>
 </main>
-
-
-
-
-
-
-
-
-
 </body>
 </html>
