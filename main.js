@@ -106,7 +106,9 @@ function alterarConteudo15() {
   document.getElementsByClassName("words")[7].innerHTML = "<img src='avimg/3.png' height='130px'>"
 }
 
-
+function trailer8() {
+  document.getElementsByClassName('words')[7].innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/CTdvZwwShqM' title='YouTube video player'></iframe>'"
+}
   
 function alterarConteudo16() {
   document.getElementsByClassName("words")[7].innerHTML = "Após os eventos catastróficos em Nova York com Os Vingadores, Steve Rogers, também conhecido como Capitão América, segue tentando se ajustar ao mundo moderno. Porém, quando um colega da agência S.H.I.E.L.D. é atacado, Steve se vê preso em uma rede de intrigas que ameaça colocar o mundo em risco.Em parceria com a Viúva Negra e Falcão, seu novo aliado, o Capitão América tem que enfrentar um misterioso e inesperado inimigo, o Soldado Invernal."
