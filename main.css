@@ -1,94 +1,76 @@
-body {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    padding: 2rem;
-    /*background-image: url("imagens/universo1.gif");*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #e8e6e7;
 }
 
 a{
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
 }
 
-a:hover{
-    color: #ff3636;
-    text-decoration: underline;
-
+nav.home{
+  margin-bottom: 150px;
 }
 
-h1#home{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-p#menu{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-a#menu{
-    text-decoration: none;
-    margin: 100px;
-     }
-
-img#logo{
-    width: 200px;
-    height: 100px;
-}
-
-
-
-div#sec1{
+nav{
     display: flex;
-    flex-direction: row;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10px;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #1d1d1f;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav li a:hover{
+    color: #ff0000;
 }
 
-.imagens{
-    width: 300px;
-    height: 200px;
-    margin-left: 30px;
-    margin-right: 30px;
-    flex: 1;
-    margin-top: 100px;
+/* CORPO DA PAGINA */
+
+main#page{
+    flex:1;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-500px;
+    margin-top:-250px;
+    text-align: auto;
 }
 
-
-.imagens:hover{
-    opacity: 0.3;
-    filter:grayscale(100%);
-    transition: 1s;
-    transform: scale(1.1);
-    transition: all 0.5s;
-}
-
-p#titulos{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-/*--Página Personagens--*/
-
-img#logo1{
-    width: 200px;
-    height: 70px;
-}
-
-a#menu:hover{
-    color: #ff3636;
-    text-decoration: underline;
-
-}
-
-
-
-/*-- pagina home--*/
+/* HOME */
 
 .sec2 *{
     -webkit-box-sizing: border-box;
@@ -158,73 +140,133 @@ div.sec1{
     flex: 1;
 }
 
+p#home{
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+h3#titulos{
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+h3#titulos:hover{
+  color: #ff0000;
+}
+
+
 /*--Página Filmes--*/
+
+nav#navfim{
+  margin: 10px;
+  background-color: bisque;
+}
 
 
 h1#font0{ 
     font-weight: 500;
     font-size: 2.0rem;
     line-height: 1.0;
-    color:rgb(146, 62, 62);
+    color:#000000;
     }
     
-    .words {
-        width: 1000px;
-        overflow-wrap: break-word; 
-        word-wrap: break-word;
-        word-break: break-word;
-        font-size: 21px;
-        color:rgb(146, 62, 62);
-    }
+.words {
+  width: 1000px;
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
+  word-break: break-word;
+  font-size: 21px;
+  color:#202020;
+}
     
-    h2#font1{
-        font-size: 2.5rem;
-        color:rgb(146, 62, 62); 
-    }
+h2#font1{
+  font-size: 2.5rem;
+  color:#9E0000;
+}
     
+img#logo{
+  width: 200px;
+  height: 80px;
+}
 
+div.filmes{
+  margin-top: 50px;
+}
+
+.btt {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.btt:hover {
+  background-color: #374151;
+}
+
+.btt:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .btt {
+    padding: .75rem 1.5rem;
+  }
+}
 
 /*--Página Sobre--*/
 
 div#sobre{
-    display: flex;
-    flex-direction: row;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10px;
-
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 img#sobre{
     width: 300px;
-    height: 300px;
-    padding: 30px;
-    margin-top: 100px;
+    height:300px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-/* CORPO DA PAGINA */
-    header{
-        background-color:#f5f5f5;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.0rem 50px;
-    }
-    
-    main{
-        position:absolute;
-		left:50%;
-		top:50%;
-		margin-left:-500px;
-		margin-top:-250px;
-        text-align: auto;
-    }
+body#fundo{
+  background-color: #f4fdfd;
+}
 
-/* CARD */
+h1#sobre{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+/* Card Sobre */
 
 .card *{
   -webkit-box-sizing: border-box;
@@ -271,7 +313,8 @@ filter: blur(10px);
 
 }
 
-/* PERSONAGENS */
+
+/* Pagina personagens */
 
 nav#personagens{
   margin-bottom: 10px;
@@ -347,4 +390,3 @@ input.botaopers{
 width: 350px;
 height: 40px;
 }
-  
