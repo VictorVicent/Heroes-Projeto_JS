@@ -133,7 +133,9 @@ function alterarConteudo19() {
   document.getElementsByClassName("words")[9].innerHTML = "<img src='avimg/1.png' height='130px'>"
 }
 
-
+function trailer10() {
+  document.getElementsByClassName('words')[9].innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/t_ULBP6V9bg' title='YouTube video player'></iframe>'"
+}
   
 function alterarConteudo20() {
   document.getElementsByClassName("words")[9].innerHTML = "Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos.Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade."
