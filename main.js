@@ -40,6 +40,10 @@ function alterarConteudo5() {
   document.getElementsByClassName("words")[2].innerHTML = "<img src='avimg/8.png' height='130px'>"
 }
 
+function trailer3() {
+  document.getElementsByClassName('words')[2].innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/wL4a4MafSjQ' title='YouTube video player'></iframe>'"
+}
+
 
 function alterarConteudo6() {
   document.getElementsByClassName("words")[2].innerHTML = "Conheça a história de T'Challa, príncipe do reino de Wakanda, que perde o seu pai e viaja para os Estados Unidos, onde tem contato com os Vingadores.Entre as suas habilidades estão a velocidade, inteligência e os sentidos apurados."
