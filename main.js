@@ -13,6 +13,9 @@ function alterarConteudo() {
   document.getElementsByClassName("words")[0].innerHTML = "<img src='avimg/10.png' height='130px'>"
 }
 
+function trailer1() {
+  document.getElementsByClassName('words')[0].innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/Vo9l81vSZn0' title='YouTube video player'></iframe>'"
+}
 
 function alterarConteudo2() {
   document.getElementsByClassName("words")[0].innerHTML = "Tony Stark é um industrial bilionário e inventor brilhante que realiza testes bélicos no exterior, mas é sequestrado por terroristas que o forçam a construir uma arma devastadora. Em vez disso, ele constrói uma armadura blindada e enfrenta seus sequestradores.Ao voltar para os EUA, Stark aprimora a armadura e a utiliza para combater o crime."
