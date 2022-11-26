@@ -90,3 +90,25 @@ function alterarConteudo15() {
 function alterarConteudo16() {
   document.getElementsByClassName("words")[7].innerHTML = "Após os eventos catastróficos em Nova York com Os Vingadores, Steve Rogers, também conhecido como Capitão América, segue tentando se ajustar ao mundo moderno. Porém, quando um colega da agência S.H.I.E.L.D. é atacado, Steve se vê preso em uma rede de intrigas que ameaça colocar o mundo em risco.Em parceria com a Viúva Negra e Falcão, seu novo aliado, o Capitão América tem que enfrentar um misterioso e inesperado inimigo, o Soldado Invernal."
 }
+
+//Ultimato//
+function alterarConteudo17() {
+  document.getElementsByClassName("words")[8].innerHTML = "<img src='avimg/2.png' height='130px'>"
+}
+
+
+  
+function alterarConteudo18() {
+  document.getElementsByClassName("words")[8].innerHTML = "Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos.Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco."
+}
+
+//Guerra Infinita//
+function alterarConteudo19() {
+  document.getElementsByClassName("words")[9].innerHTML = "<img src='avimg/1.png' height='130px'>"
+}
+
+
+  
+function alterarConteudo20() {
+  document.getElementsByClassName("words")[9].innerHTML = "Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos.Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade."
+}
