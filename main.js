@@ -27,6 +27,10 @@ function alterarConteudo3() {
   document.getElementsByClassName("words")[1].innerHTML = "<img src='avimg/9.png' height='130px'>"
 }
 
+function trailer2() {
+  document.getElementsByClassName('words')[1].innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/FRLYZn5PGuA' title='YouTube video player'></iframe>'"
+}
+
 function alterarConteudo4() {
   document.getElementsByClassName("words")[1].innerHTML = "Depois do ataque de Ultron, os políticos decidem controlar os Vingadores, já que suas ações afetam toda a humanidade.A decisão coloca o Capitão América em rota de colisão com o Homem de Ferro."
 }
