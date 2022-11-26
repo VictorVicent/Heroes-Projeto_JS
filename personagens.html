@@ -3,30 +3,55 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Personagens</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <title>Personagens</title>
     <script src='main.js'></script>
 </head>
 <body>
-<header>
-    <nav id="menu1">
-        <a href="home.html" ><img src="imagens/LOGO.png" alt="Logo Heroes Autoral" id="logo1">
-        <a href="personagens.html" id="menu"> PERSONAGENS </a>
-        <a href="filmes.html" id="menu"> FILMES </a>
-        <a href="sobre.html" id="menu"> SOBRE NÓS</a>
-    </nav>
-</header>
+    <header>
+        <nav id="personagens">
+            <div class="logo">
+                <h1><a href="home.html"><img src="img/LOGO.png" alt="Logo Heroes Autoral" id="logo"></a></h1>
+            </div>
+    
+            <ul>
+                <li> <a href="filmes.html"> Filmes </a> </li>
+                <li> <a href="personagens.html"> Personagens </a> </li>
+                <li> <a href="sobre.html"> Sobre </a> </li>
+            </ul>
+    
+        </nav>
+    </header>
 
-<main>
-    <div>
-        <input type="text" name="Personagem" id="personagem" size="16" minlength="3" placeholder="Digite o Personagem">
-        <input type="button" name="adicionar" id="adicionar" value="Adicionar">
-        <input type="button" name="editar" id="editar" value="Editar">
-        <input type="button" name="excluir" id="excluir" value="Excluir">
-    </div>
-</main>
-    
-    
+  
+
+
+<div id="personagens">
+
+<div class="api">
+
+<p>Foto</p>
+
+</div>
+
+<div class="api">
+   
+<p>Informações</p>
+
+</div>
+
+<div class="api">
+    <input type="text" name="nome" required="required" id="name" placeholder="Nome do personagem" class="botaopers" />
+    <button class="botaopers">Adicionar</button>
+    <button class="botaopers">Editar</button>
+    <button class="botaopers">Excluir</button>
+</div>
+
+</div>
+
+
+
 </body>
 </html>
