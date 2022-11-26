@@ -67,7 +67,9 @@ function alterarConteudo9() {
   document.getElementsByClassName("words")[4].innerHTML = "<img src='avimg/6.png' height='130px'>"
 }
 
-
+function trailer5() {
+  document.getElementsByClassName('words')[4].innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/UvNnqWLruXA' title='YouTube video player'></iframe>'"
+}
   
 function alterarConteudo10() {
   document.getElementsByClassName("words")[4].innerHTML = "Após anos afastado, Thor retorna para casa e descobre que seu pai, Odin, rei de Asgard, está desaparecido. Após encontrá-lo, ele toma conhecimento de sua irmã mais velha, Hela, a poderosa e implacável deusa da morte. Com o auxílio de Loki, ele enfrenta Hela, mas durante a batalha, Thor acaba preso em Sakaar, um planeta do outro lado do universo.Agora, ele precisa correr contra o tempo para voltar a Asgard e impedir o Ragnarok, a destruição de seu mundo."
