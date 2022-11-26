@@ -68,3 +68,25 @@ function alterarConteudo11() {
 function alterarConteudo12() {
   document.getElementsByClassName("words")[5].innerHTML = "O aventureiro do espaço Peter Quill torna-se presa de caçadores de recompensas depois que rouba a esfera de um vilão traiçoeiro, Ronan. Para escapar do perigo, ele faz uma aliança com um grupo de quatro extraterrestres.Quando Quill descobre que a esfera roubada possui um poder capaz de mudar os rumos do universo, ele e seu grupo deverão proteger o objeto para salvar o futuro da galáxia."
 }
+
+//Spider//
+function alterarConteudo13() {
+  document.getElementsByClassName("words")[6].innerHTML = "<img src='avimg/4.png' height='130px'>"
+}
+
+
+  
+function alterarConteudo14() {
+  document.getElementsByClassName("words")[6].innerHTML = "Peter Parker tem a sua identidade secreta revelada e pede ajuda ao Doutor Estranho.Quando um feitiço para reverter o evento não sai como o esperado, o Homem-Aranha e seu companheiro dos Vingadores precisam enfrentar inimigos de todo o multiverso."
+}
+
+//Capitão America 2//
+function alterarConteudo15() {
+  document.getElementsByClassName("words")[7].innerHTML = "<img src='avimg/3.png' height='130px'>"
+}
+
+
+  
+function alterarConteudo16() {
+  document.getElementsByClassName("words")[7].innerHTML = "Após os eventos catastróficos em Nova York com Os Vingadores, Steve Rogers, também conhecido como Capitão América, segue tentando se ajustar ao mundo moderno. Porém, quando um colega da agência S.H.I.E.L.D. é atacado, Steve se vê preso em uma rede de intrigas que ameaça colocar o mundo em risco.Em parceria com a Viúva Negra e Falcão, seu novo aliado, o Capitão América tem que enfrentar um misterioso e inesperado inimigo, o Soldado Invernal."
+}
