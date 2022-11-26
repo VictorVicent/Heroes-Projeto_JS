@@ -3,66 +3,62 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Sobre nós</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <title>Sobre nós</title>
     <script src='main.js'></script>
 </head>
-<body>
+<body id="fundo">
+    <section>
     <header>
-        <nav id="menu1">
-            <a href="home.html" ><img src="imagens/LOGO.png" alt="Logo Heroes Autoral" id="logo1">
-            <a href="personagens.html" id="menu"> PERSONAGENS </a>
-            <a href="filmes.html" id="menu"> FILMES </a>
-            <a href="sobre.html" id="menu"> SOBRE NÓS</a>
+        <nav>
+            <div class="logo">
+                <h1><a href="home.html"><img src="img/LOGO.png" alt="Logo Heroes Autoral" id="logo"></a></h1>
+            </div>
+    
+            <ul>
+                <li> <a href="filmes.html"> Filmes </a> </li>
+                <li> <a href="personagens.html"> Personagens </a> </li>
+                <li> <a href="sobre.html"> Sobre </a> </li>
+            </ul>
+    
         </nav>
     </header>
-<main></main>
+</section>
+    <h1 id="sobre">Elenco do Projeto</h1>
     <div id="sobre">
 
-        <figure class="snip1361">
-        <img src="imagens/Diego.jpg" alt="Imagem do Diego" id="sobre">
+    <figure class="card">
+        <img src="img/Diego.jpg" alt="Imagem do Diego" id="sobre">
         <figcaption>
-        <p>Meu nome é Diego Sampaio, cursando o terceiro ciclo de Sistemas para Internet, atualmente com 20 anos e procurando um estagio na area de tecnologia focado no back-end.
+            <h3>Diego</h3><br>
+        <p>Meu nome é Diego Sampaio, estou cursando o terceiro ciclo de Sistemas para Internet, atualmente com 20 anos e procurando um estagio na area de tecnologia focado no back-end.
         </p>
-    </figcaption>
+        </figcaption>
     </figure>
    
 
-        <figure class="snip1361">
-        <img src="imagens/Victor.jpeg" alt="Imagem do Victor" id="sobre">
+<figure class="card">
+        <img src="img/Victor.jpeg" alt="Imagem do Victor" id="sobre">
         <figcaption>
+            <h3>Victor</h3><br>
         <p>Meu nome é Victor Vicente Alves, tenho 19 anos, cursando faculdade de SI(Sistemas para internet) na Fatec Rubens Lara em Santos, fiz cursos profissionalizantes de Photoshop, Corel Draw, After Effects, Adobe Premiere e Excel na S.O.S Tecnologia e Educação.
         </p>
-</figcaption>
+        </figcaption>
 </figure>
 
-<figure class="snip1361">
-        <img src="imagens/Tasso.jpg" alt="Imagem do Gabriel" id="sobre">
-        <figcaption>
-        <p>
-            Meu nome é Gabriel Henrique Tasso Martins, sai direto do ensino medio e já ingressei na faculdade e finalizando a faculdade eu pretendo começar a trabalhar.
-        </p>
-</figcaption>
-</figure>
 
-<figure class="snip1361">
-        <img src="imagens/Pedro.jpg" alt="Imagem do Pedro" id="sobre">
+<figure class="card">
+        <img src="img/Pedro.jpg" alt="Imagem do Pedro" id="sobre">
         <figcaption>
+            <h3>Pedro</h3><br>
         <p>Meu nome é Pedro Estevam Blanco Campbell, nasci em Santos no dia 10/07/2003 e tenho 19 anos, estudo 
-        na fatec rubens lara onde curso sistemas para internet e estou no terceiro semestre, no meu tempo livre 
+        na Fatec Rubens Lara onde curso Sistemas para internet e estou no terceiro semestre, no meu tempo livre 
         gosto de jogar e assistir futebol além de praticar outros esportes, também em meu tempo livre gosto de sair com meus amigos.</p>
     </figcaption>
 </figure>
 
 </div>
-<script>
-    /* Demo purposes only */
-$(".hover").mouseleave(
-  function () {
-    $(this).removeClass("hover");
-  }
-);
-</script>
 </body>
 </html>
