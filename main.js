@@ -54,6 +54,10 @@ function alterarConteudo7() {
   document.getElementsByClassName("words")[3].innerHTML = "<img src='avimg/7.png' height='130px'>"
 }
 
+function trailer4() {
+  document.getElementsByClassName('words')[3].innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/KeNEGtsCWEk' title='YouTube video player'></iframe>'"
+}
+
 function alterarConteudo8() {
   document.getElementsByClassName("words")[3].innerHTML = "Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao roubá-lo de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender a Terra de ameaças sem precedentes.Homem de Ferro, Capitão América, Hulk, Thor, Viúva Negra e Gavião Arqueiro formam o time dos sonhos de Fury, mas eles precisam aprender a colocar os egos de lado e agir como um grupo em prol da humanidade."
 }
