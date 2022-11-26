@@ -3,92 +3,192 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Filmes</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <title>Filmes</title>
     <script src='main.js'></script>
 </head>
 <body>
-<header>
-    <nav id="menu1">
-        <a href="home.html" ><img src="imagens/LOGO.png" alt="Logo Heroes Autoral" id="logo1">
-        <a href="personagens.html" id="menu"> PERSONAGENS </a>
-        <a href="filmes.html" id="menu"> FILMES </a>
-        <a href="sobre.html" id="menu"> SOBRE NÓS</a>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="home.html"><img src="img/LOGO.png" alt="Logo Heroes Autoral" id="logo"></a></h1>
+            </div>
+    
+            <ul>
+                <li> <a href="filmes.html"> Filmes </a> </li>
+                <li> <a href="personagens.html"> Personagens</a> </li>
+                <li> <a href="sobre.html"> Sobre Nós </a> </li>
+            </ul>
+    
+        </nav>
+    </header>
 
-<main>
+<main id="page">
     <h1 id="font0" id="filmes">MELHORES FILMES DA MARVEL</h1>
 <br>
-    <h2>10.Homem de Ferro(2008)</h2> <img class="img-responsive" loading="lazy" src="https://media3.giphy.com/media/UJ5I7921pAOEU/giphy.gif" height="300"  width="450">
+    <h2>10.Homem de Ferro(2008)</h2> 
     
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo()"> Avaliação </button> 
+    </div>
+
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo2()"> Sinopse </button> 
+    </div>
+
     <p class="words">Tony Stark é um industrial bilionário e inventor brilhante que realiza testes bélicos no exterior, mas é sequestrado por terroristas que o forçam a construir uma arma devastadora. Em vez disso, ele constrói uma armadura blindada e enfrenta seus sequestradores.
     Ao voltar para os EUA, Stark aprimora a armadura e a utiliza para combater o crime.</p>
 
+    
+
+    <br>
     <br>
 
-    <h2>9.Capitão América: Guerra Civil(2016)</h2> <img class="img-responsive" loading="lazy" src="https://i.pinimg.com/originals/7e/19/dd/7e19dd9d753696f7ca658aad90dbb0f1.gif" height="300"  width="450">
+    <h2>9.Capitão América: Guerra Civil(2016)</h2> 
+    
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo3()"> Avaliação </button> 
+    </div>
 
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo4()"> Sinopse </button> 
+    </div>
+    
     <p class="words">Depois do ataque de Ultron, os políticos decidem controlar os Vingadores, já que suas ações afetam toda a humanidade.
     A decisão coloca o Capitão América em rota de colisão com o Homem de Ferro.</p>
 
     <br>
+    <br>
 
-    <h2>8.Pantera Negra(2018)</h2> <img class="img-responsive" loading="lazy" src="https://i.pinimg.com/originals/86/02/9e/86029e2bcad33c0e17cd12aa8e717491.gif" height="300"  width="450">
+    <h2>8.Pantera Negra(2018)</h2> 
+    
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo5()"> Avaliação </button> 
+    </div>
+
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo6()"> Sinopse </button> 
+    </div>
     
     <p class="words">Conheça a história de T'Challa, príncipe do reino de Wakanda, que perde o seu pai e viaja para os Estados Unidos, onde tem contato com os Vingadores.
     Entre as suas habilidades estão a velocidade, inteligência e os sentidos apurados.</p>
 
     <br>
+    <br>
 
-    <h2>7.Vingadores(2012)</h2> <img class="img-responsive" loading="lazy" src="https://gifs.eco.br/wp-content/uploads/2022/07/gif-de-the-avengers-0.gif" height="300"  width="450">
+    <h2>7.Vingadores(2012)</h2> 
 
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo7()"> Avaliação </button> 
+    </div>
+
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo8()"> Sinopse </button> 
+    </div>
+    
     <p class="words">Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao roubá-lo de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender a Terra de ameaças sem precedentes.
     Homem de Ferro, Capitão América, Hulk, Thor, Viúva Negra e Gavião Arqueiro formam o time dos sonhos de Fury, mas eles precisam aprender a colocar os egos de lado e agir como um grupo em prol da humanidade.</p>
 
     <br>
+    <br>
 
-    <h2>6.Thor: Ragnarok(2017)</h2> <img class="img-responsive" loading="lazy" src="https://media.tenor.com/nHVJIhw4aIMAAAAd/thor-ragnarok.gif" height="300"  width="450">
+    <h2>6.Thor: Ragnarok(2017)</h2> 
+    
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo9()"> Avaliação </button> 
+    </div>
 
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo10()"> Sinopse </button> 
+    </div>
+    
     <p class="words">Após anos afastado, Thor retorna para casa e descobre que seu pai, Odin, rei de Asgard, está desaparecido. Após encontrá-lo, ele toma conhecimento de sua irmã mais velha, Hela, a poderosa e implacável deusa da morte. Com o auxílio de Loki, ele enfrenta Hela, mas durante a batalha, Thor acaba preso em Sakaar, um planeta do outro lado do universo.
     Agora, ele precisa correr contra o tempo para voltar a Asgard e impedir o Ragnarok, a destruição de seu mundo.</p>
 
     <br>
+    <br>
 
-    <h2>5.Guardiões da Galáxia(2014)</h2> <img class="img-responsive" loading="lazy" src="http://media.giphy.com/media/s5G8VG1SKGrmM/giphy.gif" height="300"  width="450">
+    <h2>5.Guardiões da Galáxia(2014)</h2> 
+
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo11()"> Avaliação </button> 
+    </div>
+
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo12()"> Sinopse </button> 
+    </div>
 
     <p class="words">O aventureiro do espaço Peter Quill torna-se presa de caçadores de recompensas depois que rouba a esfera de um vilão traiçoeiro, Ronan. Para escapar do perigo, ele faz uma aliança com um grupo de quatro extraterrestres.
     Quando Quill descobre que a esfera roubada possui um poder capaz de mudar os rumos do universo, ele e seu grupo deverão proteger o objeto para salvar o futuro da galáxia.</p>
 
     <br>
+    <br>
 
-    <h2>4.Homem Aranha: Sem volta para casa(2021)</h2> <img class="img-responsive" loading="lazy" src="https://media2.giphy.com/media/bRJTaKweswykpjab4n/giphy.gif?cid=ecf05e47bd865s329spb7f26i7snidyh61ak1xs7u7ng3bfe&rid=giphy.gif&ct=g" height="300"  width="450">
+    <h2>4.Homem Aranha: Sem volta para casa(2021)</h2> 
+
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo13()"> Avaliação </button> 
+    </div>
+
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo14()"> Sinopse </button> 
+    </div>
 
     <p class="words">Peter Parker tem a sua identidade secreta revelada e pede ajuda ao Doutor Estranho.
     Quando um feitiço para reverter o evento não sai como o esperado, o Homem-Aranha e seu companheiro dos Vingadores precisam enfrentar inimigos de todo o multiverso.</p>
 
     <br>
+    <br>
 
-    <h2>3.Capitão América 2: Soldado Invernal </h2> <img class="img-responsive" loading="lazy" src="https://i.pinimg.com/originals/2e/cb/c3/2ecbc3011b6ae1d8e5c669fb09c2cbda.gif" height="300"  width="450">
+    <h2>3.Capitão América 2: Soldado Invernal</h2>
+    
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo15()"> Avaliação </button> 
+    </div>
+
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo16()"> Sinopse </button> 
+    </div>
     
     <p class="words">Após os eventos catastróficos em Nova York com Os Vingadores, Steve Rogers, também conhecido como Capitão América, segue tentando se ajustar ao mundo moderno. Porém, quando um colega da agência S.H.I.E.L.D. é atacado, Steve se vê preso em uma rede de intrigas que ameaça colocar o mundo em risco.
     Em parceria com a Viúva Negra e Falcão, seu novo aliado, o Capitão América tem que enfrentar um misterioso e inesperado inimigo, o Soldado Invernal.</p>
 
     <br>
+    <br>
 
-    <h2>2.Vingadores: Ultimato(2019)</h2> <img class="img-responsive" loading="lazy" src="https://i.pinimg.com/originals/13/1e/11/131e11bbf7bb71d8ec9a7cd3206ec475.gif" height="300"  width="450">
+    <h2>2.Vingadores: Ultimato(2019)</h2> 
+    
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo17()"> Avaliação </button> 
+    </div>
+
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo18()"> Sinopse </button> 
+    </div>
 
     <p class="words">Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos.
     Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.</p>
 
     <br>
+    <br>
 
-    <h2>1.Vingadores: Guerra Infinita(2018)</h2> <img class="img-responsive" loading="lazy" src="https://pa1.narvii.com/6663/cad9741f82081349f4d15912102108134241f5c7_hq.gif" height="300"  width="450">
+    <h2>1.Vingadores: Guerra Infinita(2018)</h2>
+
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo19()"> Avaliação </button> 
+    </div>
+
+    <div class="btn">
+        <button class="btt" onclick="alterarConteudo20()"> Sinopse </button> 
+    </div>
 
     <p class="words">Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos.
     Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.</p>
 </main> 
 </body>
 </html>
+
+
 
