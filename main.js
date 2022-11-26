@@ -80,7 +80,9 @@ function alterarConteudo11() {
   document.getElementsByClassName("words")[5].innerHTML = "<img src='avimg/5.png' height='130px'>"
 }
 
-
+function trailer6() {
+  document.getElementsByClassName('words')[5].innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/8VN_l57QWyQ' title='YouTube video player'></iframe>'"
+}
   
 function alterarConteudo12() {
   document.getElementsByClassName("words")[5].innerHTML = "O aventureiro do espaço Peter Quill torna-se presa de caçadores de recompensas depois que rouba a esfera de um vilão traiçoeiro, Ronan. Para escapar do perigo, ele faz uma aliança com um grupo de quatro extraterrestres.Quando Quill descobre que a esfera roubada possui um poder capaz de mudar os rumos do universo, ele e seu grupo deverão proteger o objeto para salvar o futuro da galáxia."
