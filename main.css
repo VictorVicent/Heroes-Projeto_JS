@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +8,9 @@
 }
 
 body{
-  background-color: #e8e6e7;
+  background-color: var(--background-body);
+  transition: background 0.5s linear, color 0.5s linear;
+  color: #000000;
 }
 
 a{
@@ -24,7 +27,7 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    background-color: #1d1d1f;
+    background-color: var(--background-nav);
     padding: 10px 60px;
     display: flex;
     justify-content: space-between;
@@ -57,6 +60,7 @@ nav li a{
 nav li a:hover{
     color: #ff0000;
 }
+
 
 /* CORPO DA PAGINA */
 
@@ -113,6 +117,9 @@ main#page{
     height: 80px;
   }
 
+  figcaption{
+    color: #000000;
+  }
 
 main#home{
   display:flex;
@@ -172,23 +179,21 @@ h1#font0{
     font-weight: 500;
     font-size: 2.0rem;
     line-height: 1.0;
-    color:#000000;
+    color:var(--color-h1-h2);
     }
-    
+
+h2{
+  color:var(--color-h1-h2);
+}  
 .words {
   width: 1000px;
   overflow-wrap: break-word; 
   word-wrap: break-word;
   word-break: break-word;
   font-size: 21px;
-  color:#202020;
+  color:var(--color-p);
 }
-    
-h2#font1{
-  font-size: 2.5rem;
-  color:#9E0000;
-}
-    
+  
 img#logo{
   width: 200px;
   height: 80px;
@@ -256,17 +261,14 @@ img#sobre{
     margin-right: 40px;
 }
 
-body#fundo{
-  background-color: #f4fdfd;
-}
-
 h1#sobre{
   text-align: center;
   margin-bottom: 100px;
+  color:var(--color-h1-h2);
 }
 
 
-/* Card Sobre */
+/*Card Sobre */
 
 .card *{
   -webkit-box-sizing: border-box;
@@ -320,22 +322,32 @@ nav#personagens{
   margin-bottom: 10px;
 }
 
-
-div#personagens{
+div#divheroisflex{
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#personagenss{
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 div.api{
-  border: 2px solid #000000;
+  border: 2px solid;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px black;
-  width: 400px;
-  height: 400px;
+  box-shadow: rgb(72, 72, 72) 5px 5px 5px;
+  width: 380px;
+  height: 120px;
   margin: 10px;
+  margin-left: 10px;
 }
 
 
@@ -390,3 +402,85 @@ input.botaopers{
 width: 350px;
 height: 40px;
 }
+
+text{
+  color:var(--color-text);
+}
+
+/*Dark mode*/
+
+html {
+  --background-body:#e8e6e7;
+  --color-body:#000;
+  --background-nav:    #1d1d1f;
+  --color-p: #000000;
+  --color-h1-h2: #000000;
+  --color-text:#000;
+  
+}
+
+html[data-theme="dark"] {
+  --background-body:rgb(49, 49, 49);
+  --color-body:rgb(255, 255, 255);
+  --background-nav:   #141414;
+  --color-p: #ffffff;
+  --color-h1-h2: #ffffff;
+  --color-text:#fff;
+}
+
+/* Botao Dark mode*/
+
+.switch {
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  --size-of-icon: 1.4em;
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon,1.4em);
+  width: var(--size-of-icon,1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset,0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg,#ff2c56,#ffb75f 70%);
+  ;
+ transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+  background: #303136;
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
