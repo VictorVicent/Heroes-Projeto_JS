@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,36 @@
     <link rel="stylesheet" href="main.css">
     <title>Home</title>
     <script src='main.js'></script>
+    <script src='darkmode.js' defer></script>  
+    <!-- 
+    O defer atributo é um atributo booleano.
+    Ao habilitar o defer, o navegador carregará o script em paralelo, de forma assíncrona. Mas será executado somente quando a página terminar de analisar.
+    -->
+    <script>
+    const changeThemeToDark = () => {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("data-theme", "dark");
+    }
+
+    const changeThemeToLight = () => {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("data-theme", 'light');
+    }
+    let theme = localStorage.getItem('data-theme');
+    if (theme == 'dark') changeThemeToDark();
+    
+    // O document.documentElement retorna o Elemento que é o elemento raiz do documento (por exemplo, o elemento <html> para documentos HTML).
+
+    // setAttribute() Adiciona um novo atributo ou modifica o valor de um atributo existente num elemento específico(por exemplo, [setAttribute("data-theme", "dark")].
+    
+    // O método setItem() define o valor do item de objeto de armazenamento especificado.
+
+    </script>
 </head>
 <body class="home">
 
 <header>
+
     <nav class="home">
         <div class="logo">
             <h1><a href="home.html"><img src="img/LOGO.png" alt="Logo Heroes Autoral" id="logo"></a></h1>
@@ -22,42 +48,46 @@
             <li> <a href="personagens.html"> Personagens </a></li>
             <li> <a href="sobre.html"> Sobre </a> </li>
         </ul>
-
+        <label class="switch">
+            <input type="checkbox" name="botao-dark" id="botao-dark">
+            <span class="slider"></span>
+        </label>
     </nav>
 </header>
 
 <main id="home">
+
     <div class="sec1">
 
         <figure class="sec2">
             <a href="filmes.html"><img src="img/filmes.jpeg" alt="Universo cinematografico marvel" id="imagens">
 
-            <figcaption>  
+            <figcaption>
             <h3 id="titulos">Filmes</h3>
-            <p id="home">A pagina "Filmes" é destinada a apresentar a opinião em consenso do grupo em relação aos 10 melhores filmes da marvel desde seu inicio no cinema</p>    
+            <p id="home">A pagina "Filmes" é destinada a apresentar a opinião em consenso do grupo em relação aos 10 melhores filmes da marvel desde seu inicio no cinema</p>
             </figcaption></a>
         </figure>
 
 
         <figure class="sec2">
             <a href="personagens.html"><img src="img/personagens.jpeg" alt="Personagens marvel" id="imagens">
-            
+
             <figcaption>
-            <h3 id="titulos">Personagens</h3> 
-            <p id="home">A pagina "Personagens" foi criada com o intuito do usuario criar uma lista dos seus personagens favoritos ou ou dos personagens mais fortes na sua opinião, a liberdade é totalmente sua</p>    
+            <h3 id="titulos">Personagens</h3>
+            <p id="home">A pagina "Personagens" foi criada com o intuito do usuario criar uma lista dos seus personagens favoritos ou ou dos personagens mais fortes na sua opinião, a liberdade é totalmente sua</p>
             </figcaption></a>
 
         </figure>
 
-        
+
         <figure class="sec2">
 
-            <a href="sobre.html"><img src="img/programador.jpg" alt="Imagem meramente ilustrativa para a pagina sobre os integrantes do 
+            <a href="sobre.html"><img src="img/programador.jpg" alt="Imagem meramente ilustrativa para a pagina sobre os integrantes do
             projeto" id="imagens">
-            
+
             <figcaption>
             <h3 id="titulos">Sobre Nós</h3>
-            <p id="home">A pagina "Sobre nós" é destinada à apresentar e falar um pouco sobre cada integrante do projeto</p>    
+            <p id="home">A pagina "Sobre nós" é destinada à apresentar e falar um pouco sobre cada integrante do projeto</p>
             </figcaption></a>
 
         </figure>

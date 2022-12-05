@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,8 +8,24 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <title>Filmes</title>
     <script src='main.js'></script>
+    <script src='darkmode.js' defer></script>  
+    <script>
+    const changeThemeToDark = () => {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("data-theme", "dark");
+    }
+
+    const changeThemeToLight = () => {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("data-theme", 'light');
+    }
+    let theme = localStorage.getItem('data-theme');
+    if (theme == 'dark') changeThemeToDark();
+
+    </script>
 </head>
 <body>
+
     <header>
         <nav>
             <div class="logo">
@@ -21,7 +37,10 @@
                 <li> <a href="personagens.html"> Personagens</a> </li>
                 <li> <a href="sobre.html"> Sobre </a> </li>
             </ul>
-    
+            <label class="switch">
+                <input type="checkbox" name="botao-dark" id="botao-dark">
+                <span class="slider"></span>
+            </label>
         </nav>
     </header>
 
