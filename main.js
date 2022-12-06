@@ -1,3 +1,53 @@
+// API // 
+
+// variaveis criadas pra serem usadas na requisição da api//
+const publickey = "2e6fd32baa56e3d1b899b6d7260f69ac";
+const privatekey = "eaa7da5fdea5f190db80969d34eecdf7036d6a5b";
+const ts = "1670091531";
+const hash = "0d29f77379f7b12fc91b7c8265211346";
+
+//função usada no botao de adicionar personagem//
+function adicionar(){
+  //pegando o valor do input com o nome do personagem que vai ser pesquisado//
+  let personagem = document.getElementById("name").value;
+
+  //fazendo request na api//
+  fetch(`https://gateway.marvel.com:443/v1/public/characters?name=`+ personagem +`&ts=`+ ts +`&apikey=`+ publickey +`&hash=`+ hash
+  //primeira promeça que retorna a resposta da request em .json//
+).then((response)=>{
+  return response.json();
+  //segunda promeça que retorna o json com parse no console log (o conceito em si eu n entendo mas basicamente aparece como objeto com os valores e etc)//
+}).then((jsonParsed) => {
+  console.log(jsonParsed);
+  //criando uma variavel para div principal que vai adicionar as outras divs//
+  const divprincipal = document.querySelector('#personagenss');
+
+//aqui estamos "caminhando" dentro  do json, o .data.results é são os caminhos do object que foi criado com as informações da api, o foreach serve pra fazermos isso repetidas vezes//
+  jsonParsed.data.results.forEach(element => {
+    //aqui as consts estão "caminhando" no json tambem, mas elas estao computando informações especificas, por exemplo a const info esta computando o valor da description que no caso é a biografia do personagem//
+    const info = element.description
+    //aqui aquele ponto ta separado pra concatenar a imagem com a extensão dela pra fazer aparecer no html corretamente//
+    const srcimg = element.thumbnail.path + '.' + element.thumbnail.extension
+    const heroname = element.name
+
+    //aqui finalizo a div chamando outra div que foi usado o tranverse//
+    createDivHero (info, srcimg, heroname, divprincipal);
+  })
+})
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Função hover (page-sobre)*/
 $(".hover").mouseleave(
   function () {
