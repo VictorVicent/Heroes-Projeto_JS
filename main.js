@@ -86,7 +86,7 @@ function createDivHero (info, srcimg, heroname, divtoappend3) {
   excluir.setAttribute('onclick', 'excluir()')
 
   
-  editar.textContent = 'Editar'
+  excluir.textContent = 'Excluir'
  
 
   divfilho3.appendChild(excluir)
@@ -103,6 +103,9 @@ function createDivHero (info, srcimg, heroname, divtoappend3) {
 
 }
 
+function excluir() {
+  document.querySelector("#divheroisflex").outerHTML = "";
+}
 
 
 
