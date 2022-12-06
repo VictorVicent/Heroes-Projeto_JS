@@ -429,7 +429,6 @@ img#fotosdosherois{
   margin-bottom: 40px;
 }
 
-
 text{
   color:var(--color-text);
 }
@@ -443,6 +442,7 @@ html {
   --color-p: #000000;
   --color-h1-h2: #000000;
   --color-text:#000;
+  --color-filminho:#000;
   
 }
 
@@ -453,6 +453,7 @@ html[data-theme="dark"] {
   --color-p: #ffffff;
   --color-h1-h2: #ffffff;
   --color-text:#fff;
+  --color-filminho:#fff;
 }
 
 /* Botao Dark mode*/
@@ -509,5 +510,31 @@ input:checked + .slider:before {
   left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
   background: #303136;
   box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+#filminho{
+  border:2px solid;
+  border-radius: 10px;
+  box-shadow:rgb(72, 72, 72) 5px 5px 5px;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  color:var(--color-filminho);
+}
+
+h2#film{
+  padding: 5px;
+  margin-top: 30px;
+}
+
+.tabelaeditavel{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tabelaeditavel td{
+  border: solid 1px;
+  padding: 10px;
 }
 
