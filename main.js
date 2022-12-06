@@ -37,7 +37,71 @@ function adicionar(){
 }
 
 
+function createDivHero (info, srcimg, heroname, divtoappend3) {
 
+  //aqui basicamente estou criando elementos que vou trabalhar mais pra frente//
+  const divprincipal1 = document.createElement('div')
+  //aqui estou setando uma id pro meu elemento//
+  divprincipal1.setAttribute('id','divheroisflex')
+
+
+  const divpai = document.createElement('div')
+  const divfilho = document.createElement('div')
+  const textname = document.createElement('text')
+  const img = document.createElement('img')
+  img.setAttribute("id", "fotosdosherois")
+
+  //aqui estou setando valor para o meu elemento//
+  textname.textContent = heroname
+  img.src = srcimg
+
+  //aqui é o tranverse, a primeira linha basicamente esta dizendo "a const divfilho.vaiabrigar(const img)", a segunda linha "a const divfilho.vaiabrigar(const textname)" e a terceita linha "a const divpai.vaiabrigar(const divfilh(que esta abrigando as outras duas ja))"//
+  divfilho.appendChild(img)
+  divfilho.appendChild(textname)
+  divpai.appendChild(divfilho)
+  //aqui estou adicionando uma class na divpai//
+  divpai.classList.add("infos")
+
+
+  const divpai2 = document.createElement('div')
+  const divfilho2 = document.createElement('div')
+  const textname2 = document.createElement('text')
+
+  textname2.textContent = info
+
+  divfilho2.appendChild(textname2)
+  divpai2.appendChild(divfilho2)
+  divpai2.classList.add('infos');
+
+
+  const divpai3 = document.createElement('div')
+  const divfilho3 = document.createElement('div')
+
+  const editar = document.createElement('button')
+  editar.setAttribute('class', 'botaopers')
+  
+
+  const excluir = document.createElement('button')
+  excluir.setAttribute('class', 'botaopers')
+  excluir.setAttribute('onclick', 'excluir()')
+
+  
+  editar.textContent = 'Editar'
+ 
+
+  divfilho3.appendChild(excluir)
+  divpai3.appendChild(divfilho3)
+  divpai3.classList.add('infos')
+  
+
+  divprincipal1.appendChild(divpai)
+  divprincipal1.appendChild(divpai2)
+  divprincipal1.appendChild(divpai3)
+
+//aqui estou adicionando a divprincipal1 que contei as informações anteriores na divtoappend3 que é a div que existe no html sem o js//
+  divtoappend3.appendChild(divprincipal1)
+
+}
 
 
 
