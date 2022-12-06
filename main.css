@@ -403,6 +403,33 @@ width: 350px;
 height: 40px;
 }
 
+img#fotosdosherois{
+  border: 2px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+  width: 400px;
+  height: 400px;
+}
+
+.personagem{
+  text-align: center;
+  width: 400px;
+  height: 400px;
+}
+
+.infos{
+  border:2px solid;
+  border-radius: 10px;
+  box-shadow:rgb(72, 72, 72) 5px 5px 5px;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+
 text{
   color:var(--color-text);
 }
